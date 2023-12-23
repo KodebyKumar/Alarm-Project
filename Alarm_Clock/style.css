@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+     font-family: 'Teko', sans-serif;
+  }
+  
+  body {
+    background-color: #2c5035; /* Updated background color */
+  }
+  
+  #title {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 20px;
+    color: #3498db; /* Updated title color */
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+
+.timer-display {
+  font-size: 2.18em;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  color: #2c3e50;
+}
+  .wrapper {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 31.25em;
+    padding: 3.12em 5em;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 1em;
+    border: 8px solid #3498db; /* Set border and color */
+    border-radius: 0 0 10px 10px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .timer-display {
+    font-size: 2.18em;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    color: #2c3e50;
+    border: 2px solid #3498db;
+    padding: 0.5em;
+    border-radius: 0 0 10px 10px; /* Set border-radius only for the bottom corners */
+  }
+  
+  .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+  }
+  
+  .inputs input {
+    width: 2.8em;
+    font-size: 1.3em;
+    border: 1px solid #3498db; /* Updated input border color */
+    border-radius: 0.3em;
+    padding: 0.4em 0.2em;
+    outline: none; /* Removed outline on focus */
+  }
+  
+  #set {
+    background-color: #3498db; /* Updated set button background color */
+    border: none;
+    padding: 0.9em 1.8em;
+    display: block;
+    margin: 1.5em auto 0 auto;
+    border-radius: 2em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Added smooth transition */
+  }
+  
+  #set:hover {
+    background-color: #29b9a3; /* Set button color on hover */
+  }
+  
+  .alarm {
+    display: grid;
+    grid-template-columns: 8fr 2fr 2fr;
+    gap: 1em;
+    margin-top: 1.5em;
+    align-items: center;
+    border-bottom: 1px solid #ecf0f1; /* Updated alarm border color */
+    padding-bottom: 0.6em;
+  }
+  
+  .alarm input[type="checkbox"] {
+    appearance: none;
+    height: 2em;
+    width: 3.75em;
+    background-color: #ecf0f1; /* Updated checkbox background color */
+    border-radius: 1.25em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .alarm input[type="checkbox"]:before {
+    position: absolute;
+    content: "";
+    background-color: #bdc3c7; /* Updated checkbox color */
+    height: 1.43em;
+    width: 1.43em;
+    border-radius: 50%;
+    top: 0.25em;
+    left: 0.25em;
+  }
+  
+  .alarm input[type="checkbox"]:checked {
+    background-color: #3498db; /* Updated checked checkbox background color */
+  }
+  
+  .alarm input[type="checkbox"]:checked:before {
+    background-color: #ffffff; /* Updated checked checkbox color */
+    left: 2em;
+  }
+  
+  .deleteButton {
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #3ce7b9; /* Updated delete button color */
+    border: 2px;
+    cursor: pointer;
+    transition: color 0.3s; /* Added smooth transition */
+  }
+  
+  .deleteButton:hover {
+    color: #c0392b; /* Delete button color on hover */
+  }
+  
